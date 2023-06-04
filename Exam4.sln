@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dapperApi", "dapperApi\dapperApi.csproj", "{88D56501-3747-4CC2-80D8-F6DAD8A5EDD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{70D51A4E-76BF-462E-98F5-096320F5FC6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{16F6CDE9-9777-4889-9944-178533C7BFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{ACAFDFC7-9663-4521-8635-BD3E6175BDBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88D56501-3747-4CC2-80D8-F6DAD8A5EDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D56501-3747-4CC2-80D8-F6DAD8A5EDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D56501-3747-4CC2-80D8-F6DAD8A5EDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D56501-3747-4CC2-80D8-F6DAD8A5EDD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D51A4E-76BF-462E-98F5-096320F5FC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D51A4E-76BF-462E-98F5-096320F5FC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D51A4E-76BF-462E-98F5-096320F5FC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D51A4E-76BF-462E-98F5-096320F5FC6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F6CDE9-9777-4889-9944-178533C7BFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F6CDE9-9777-4889-9944-178533C7BFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F6CDE9-9777-4889-9944-178533C7BFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F6CDE9-9777-4889-9944-178533C7BFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAFDFC7-9663-4521-8635-BD3E6175BDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAFDFC7-9663-4521-8635-BD3E6175BDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAFDFC7-9663-4521-8635-BD3E6175BDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAFDFC7-9663-4521-8635-BD3E6175BDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
