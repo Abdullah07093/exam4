@@ -1,10 +1,15 @@
+using WebApi.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddSingleton<IFileService,FileService>();
 builder.Services.AddSingleton<CategoriService>();
+builder.Services.AddSingleton<QuoteImagesService>();
+
 builder.Services.AddSingleton<QuoteService>();
 builder.Services.AddSingleton<DapperContext>();
 
@@ -19,6 +24,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 

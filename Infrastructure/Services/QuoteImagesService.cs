@@ -29,6 +29,8 @@ public class QuoteImagesService
     }
     }
 
+    
+
 
 
    public QuoteImagesDto AddQuoteImage(QuoteImagesDto quoteimage)
@@ -40,6 +42,17 @@ public class QuoteImagesService
        return quoteimage;
     }
     }
+
+ public QuoteImagesDto AddQuoteImagebyQouteId(QuoteImagesDto quoteimage,QuoteImagesDto Id)
+    {
+    using(var conn= context.CreateConnection()){
+        var sql=$"insert into quoteimages(id,image_name,quote_id )values ( @Id,@ImageName,QuoteId) where quote_id=quotes.id returning id";
+       var result = conn.Execute(sql,new {quoteimage.Id,quoteimage.ImageName,quoteimage.QuoteId});
+       quoteimage.Id=result;
+       return quoteimage;
+    }
+    }
+
 
         public QuoteImagesDto UpdateQuoteImage(QuoteImagesDto quoteimage)
     {
